@@ -8,7 +8,7 @@ for i in range(1,len(array)):
         if array[j] < array[j-1]:
             array[j],array[j-1] = array[j-1],array[j]
         else:
-            break
+            break 
 
 
 print(array)
