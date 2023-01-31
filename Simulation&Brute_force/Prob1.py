@@ -22,7 +22,7 @@ for move in moves:
             nx = x + dx[i]
             ny = y + dy[i]
     #공간을 벗어나는 경우
-    if nx > n or nx > n or nx < 1 or nx < 1:
+    if nx > n or ny > n or nx < 1 or ny < 1:
         continue
     #이동해
     x,y = nx,ny
