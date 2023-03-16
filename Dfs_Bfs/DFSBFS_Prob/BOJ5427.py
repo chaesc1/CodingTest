@@ -30,5 +30,12 @@ for i in range(n):
         a = list(input().strip())
         graph.append(a)
         for k in range(w):
+            if graph[j][k] == '@':
+                graph[j][k] = 0
+                sang.append([j,k])
+            if graph[j][k] == '*':
+                graph[j][k] = 1
+                fire.append([j,k])
+
             
 
