@@ -23,7 +23,7 @@ else:
     if score[-1] >= new and n == p:#만약 점수가 랭킹 리스트에 올라갈 수 없을 정도로 낮다면 -1을 출력한다.
         print(-1)
     else:
-        res = n
+        res = n+1
         for i in range(n):
             if score[i] <= new:
                 res = i+1
