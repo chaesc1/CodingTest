@@ -11,21 +11,26 @@
 # P는 10보다 크거나 같고, 50보다 작거나 같은 정수,   10<= P < 50
 # N은 0보다 크거나 같고, P보다 작거나 같은 정수이다   0 <= N < P
 
+# import sys
+# input = sys.stdin.readline
+
+# n,new,p = map(int,input().split())
+
+# if n == 0:
+#     print(1)
+# else:
+#     score = list(map(int,input().split()))
+#     if score[-1] >= new and n == p:#만약 점수가 랭킹 리스트에 올라갈 수 없을 정도로 낮다면 -1을 출력한다.
+#         print(-1)
+#     else:
+#         res = n+1
+#         for i in range(n):
+#             if score[i] <= new:
+#                 res = i+1
+#                 break
+#         print(res)
+
 import sys
 input = sys.stdin.readline
 
 n,new,p = map(int,input().split())
-
-if n == 0:
-    print(1)
-else:
-    score = list(map(int,input().split()))
-    if score[-1] >= new and n == p:#만약 점수가 랭킹 리스트에 올라갈 수 없을 정도로 낮다면 -1을 출력한다.
-        print(-1)
-    else:
-        res = n+1
-        for i in range(n):
-            if score[i] <= new:
-                res = i+1
-                break
-        print(res)
